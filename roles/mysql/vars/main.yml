@@ -1,0 +1,6 @@
+---
+
+mysql_root_password: "aA1234567890"
+mysql_db: "testDB1"
+mysql_user_name: "bduser"
+mysql_user_password: "userpassword1"
