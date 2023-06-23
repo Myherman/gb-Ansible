@@ -65,3 +65,12 @@
     mysql_user:
       name: ''
       state: absent
+
+  - name: replace bind-address
+    lineinfile:
+      path: /etc/mysql/mysql.conf.d/mysqld.cnf
+      regexp: ^(bind-address).*
+      line: bind-address = *
+      owner: root
+      group: root
+      mode: 0644
